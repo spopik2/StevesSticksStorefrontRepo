@@ -7,12 +7,6 @@ export default function Home(props) {
 
   return (
     <>
-    <Head>
-      <meta charset="UTF-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Storefront</title>
-    </Head>
     <PageTitle title="StoreFront" tagline="featured products"/> 
     <main>
         { products.map(product => <ProductCard key={product.uid} product={product} />)}
