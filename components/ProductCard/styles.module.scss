@@ -1,0 +1,37 @@
+.productCard{
+  max-width: 420px;
+  margin: 2rem auto 0;
+  footer{
+      margin: 1rem 0;
+  }
+  button{
+      border:none;
+      background-color: #3b82f6;
+      color:#eff6ff;
+      padding: 0.5rem 2rem;
+      border-radius: 3px;
+      font-size:1.25rem;
+  }
+  img{
+      width:100%;
+  }
+}
+
+.price{
+ font-size:1.75rem;
+ font-weight: 200;
+ color:#64748b;
+ margin: 0.25rem 0;
+}
+
+.description{
+  font-size: 14px;
+  color:#94a3b8;
+
+}
+
+.name{
+   font-size: 2.75rem;
+   font-weight: 800;
+   color:#1e293b;
+}

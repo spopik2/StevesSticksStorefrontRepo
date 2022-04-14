@@ -1,0 +1,16 @@
+.pageTitle{
+    text-align: center;
+    margin: 4rem 0 0;
+}
+
+.pageTitle h1{
+    font-size: clamp(4rem, 20vw, 10rem);
+    color: #1e293b;
+    font-weight: 800;
+}
+
+.pageTitle p{
+    font-size: 1.125rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
