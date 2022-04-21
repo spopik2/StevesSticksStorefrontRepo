@@ -1,3 +1,9 @@
+# Steve's Sticks
+This repository is for the store front of Steve's Sticks. Steve's Sticks is a web app used for selling used or new hockey sticks in the Edmonton area. It's the best and quickest way to off load your old hockey sticks or buy hockey sticks. 
+
+## Happy Shopping!
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

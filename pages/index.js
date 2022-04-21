@@ -1,8 +1,5 @@
 import styles from "./../styles/products.module.css";
 import { loadStripe } from "@stripe/stripe-js";
-import Link from 'next/link' 
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
 
 import { checkOutRequest } from "./../libs/checkOutRequest";
 
@@ -22,18 +19,16 @@ function Product({ productName, uid, productPrice, imageUrl, productDescription,
   return (
     <li className={styles.productItem}>
       <img src={imageUrl} alt="" width="100" />
-      <p className={styles.name}>  {productName}</p>
-      <p className={styles.price}>${productPrice}</p>
-
-      <p className={styles.description}>{productDescription.substring(0,100)}    
-       <Link href={`product/${uid}`}>
-          <a> read more....</a>
-        </Link> 
-      </p>
-      <form action="/api/checkout" method="POST">
-        <input type="hidden" name="uid" value={uid} />
-         <button type="submit">buy now</button>
-      </form>
+      <div className="productCardContents">
+        <p className={styles.name}>  {productName}</p>
+        <p className={styles.price}>${productPrice}</p>
+        <p className={styles.description}>{productDescription}    
+        </p>
+        <form action="/api/checkout" method="POST">
+          <input type="hidden" name="uid" value={uid} />
+          <button type="submit">Buy</button>
+        </form>
+      </div>
     </li>
   );
 }
@@ -44,8 +39,8 @@ function IndexPage(props) {
   return (
     <>
     <header className={styles.header}>
-      <h1 >StoreFront</h1>
-      <p>featured products</p>
+      <h1 >Steves Sticks</h1>
+      <p>Welcome to Steves Stick. Your one stop shop for all new and used hockey sticks</p>
     </header>
     <ul className={styles.productList}>
       {featuredProducts.map((product) => (

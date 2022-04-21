@@ -1,44 +1,45 @@
 .header{
     text-align: center;
-  
     color:#1f2937;
     margin: 3rem 0 3rem;;
 }
 .header h1{
-    font-size:8rem;
+    font-size:5rem;
     font-weight: 800;
     line-height: 7rem;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 .header p{
-    font-size:3rem;
+    font-size:2rem;
     font-weight: 800;
     color:#4b5563;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 .productList {
-    display:flex;
-    justify-content:center;
-    list-style: none;
+    font-family:"Comic Sans MS", cursive, sans-serif;;
+    margin:2rem;
+    display:grid;
     gap:1rem;
-   
+    justify-content:center;
 }
-    
-
- 
 .productItem{
-    width: 320px;
-    padding: 6px;
-    
+    margin:20px;
+    box-shadow:5px 5px 5px 5px;
+    border-radius:2rem;
+    min-width:28rem;
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+.productItemContents{
+    display: inline-flex;
 }
 .productItem img{
-    width:100%;
-    vertical-align: middle;
-    background-color: rgb(247, 247, 247);
-    padding: 4px;
-    
-   box-shadow: 0 0 2px 1px #e1e1e2;
-   margin-bottom: 2rem;
-
+    width:10rem;
+    height:11rem;
+    margin-left:2rem;
+    margin-right: 2rem;
 }
 
 .productItem button{
@@ -52,20 +53,27 @@
 }
 
 .name{
+    line-height:1.4rem;
+    margin-bottom:0.5rem;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -1px;
-    color:#64748b;
+    color:#000000;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 .price{
-    font-size: 1.75rem;
-    
-    color:#64748b;
+    font-size:1.4rem;
+    margin-top:0.6rem;
+    color:#000000;
     font-weight: 100;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 .description{
-    color:#94a3b8;
-    font-size:14px;
+    margin-right: 2rem;
+    line-height:1.2rem;
+    color:#000000;
+    font: size 16px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }

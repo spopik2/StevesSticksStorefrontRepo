@@ -6,22 +6,6 @@ export default async function handler(req, res) {
   const product = await getProduct(req.body.uid);
   if(product){
     if (req.method === 'POST') {
-        /* 
-         Create A Stripe Checkout Session
-         line_items: an array/list of items the customer is purchasing (item is an object)  
-         make sure the product is a whole number.
-        
-         mode is type of payment
-             subscription: fixed price subscriptions
-             setup: if you want to save customer payment details for later purchases
-             payment: one time payments
-
-        success_url: redirect page to successfull payment currently will go back to the
-                     storefront index page.
-    
-        cancel_url: redirect page to a cancel payment  page currently will go back to the
-                     storefront index page.
-        */
       try {
         const session = await stripe.checkout.sessions.create({
               line_items: [
